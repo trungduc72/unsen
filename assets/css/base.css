@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --border-color: #e0e0e0;
+    --des-text-color: #989898; 
+    --text-color: #ababab;
+    --footer-color: #909090; 
+    --product-bg-color: #f1f1f1;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main{
+    margin-left: 90px;
+    margin-right: 88px;
+}
+
+.col-lg-7, .col-lg-5, .col-lg-3, .col-xl-7, .col-xl-5, .col-12{
+    padding: 0;
+}
+
+.navbar-bars{
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white-color);
+    transform: translateX(-100%);
+    transition: all linear 0.2s;
+    opacity: 0;
+    padding: 0;
+}
+
+.label-close{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-left: 1px solid rgb(190, 188, 188);
+    cursor: pointer;
+}
+
+.nav-close{
+    font-size: 28px;
+    padding: 10px 15px;
+    opacity: 0.8;
+}
+
+.label-close:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.nav-list{
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(190, 188, 188);
+}
+
+.nav-link{
+    height: 50px;
+    border-top: 1px solid rgb(190, 188, 188);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.nav-link:hover{
+    background-color: var(--des-text-color);
+    color: #fff;
+}
+
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.nav-input:checked ~ .overlay{
+    display: block;
+}
+.menu-header-child-option ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(190, 188, 188);
+}
+.menu-header-child-option {
+    left: 321px;
+    height: fit-content;
+    top: 0;
+}
